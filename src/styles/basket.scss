@@ -1,0 +1,146 @@
+table {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 18px;
+    width: 900px;
+}
+td {
+    padding: 15px;
+    text-align: center;
+}
+
+.first__td {
+    width: 300px;
+    text-align: left;
+    align-items: center;
+    display: flex;
+    img {
+        margin-right: 10px;
+    }
+}
+.counter__button {
+    background-color: #ffffff;
+    border: 1px solid;
+    border-color: gray;
+    width: 30px;
+    padding: 4px;
+}
+.counter__counter {
+    width: 50px;
+    padding: 4px;
+    background-color: #ffffff;
+    border: 1px solid;
+    border-color: gray;
+    border-left: none;
+    border-right: none;
+}
+.basket__empty {
+    text-transform: uppercase;
+    text-align: center;
+}
+.basket__delete {
+    background-color: #ffffff;
+    border: none;
+    color: red;
+    span {
+        font-weight: 700;
+    }
+}
+.basket__total {
+    margin-top: 30px;
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: right;
+    padding-right: 60px;
+}
+.basket__inputs {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.basket__input {
+    margin-top: 50px;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 16px;
+    border: 2px solid rgb(92, 92, 255);
+    &:focus {
+        outline: none;
+    }
+}
+.basket__input__error {
+    border: 2px solid red;
+    &::placeholder {
+        color: red;
+    }
+}
+
+.error__message {
+    display: none;
+    color: red;
+}
+.error__message__visible {
+    display: block;
+}
+.basket__makeorder {
+    background-color: rgb(92, 198, 92);
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 2px;
+    width: fit-content;
+    margin-left: 900px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    cursor: pointer;
+}
+.basket__warn {
+    position: absolute;
+    width: 400px;
+    height: 200px;
+    background-color: rgb(247, 71, 71);
+    top: -100%;
+    left: 35%;
+    display: flex;
+    transition: 0.6s;
+    span {
+        margin-left: auto;
+        margin-right: auto;
+        align-self: center;
+        font-size: 30px;
+        color: white;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+    &.active1 {
+        top: 20%;
+        transition: 0.6s;
+    }
+}
+.basket__succes {
+    position: absolute;
+    width: 400px;
+    height: 200px;
+    background-color: rgb(43, 186, 62);
+    top: -100%;
+    left: 35%;
+    display: flex;
+    transition: 0.6s;
+    span {
+        margin-left: auto;
+        margin-right: auto;
+        align-self: center;
+        font-size: 30px;
+        color: white;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+    &.active1 {
+        top: 20%;
+        transition: 0.6s;
+    }
+}
